@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Persona</title>
+</head>
+<body>
+    <h1>Editar Persona a la base de datos</h1>
+
+    <form method="POST">
+        <table>
+            {{formaPersona}}<!--objeto tipo modelo relacional para desplegar un formulario del tipo Persona, la misma se crea en el archivo views.py-->
+        </table>
+        <button type="submit">Enviar</button>
+        {% csrf_token %} <!--token para pasar la validacion CSRF acciones que forzan a un usuario final a ejecutar acciones no deseadas en una aplicacion web en la cual se esta actualmente autenticado-->
+    </form>
+
+
+</body>
+</html>

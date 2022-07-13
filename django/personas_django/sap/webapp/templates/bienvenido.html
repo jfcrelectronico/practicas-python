@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+</head>
+<body>
+<h1>Bienvenido al Sistema de administracion de personas</h1>
+<div>
+    Numero de personas registradas actualmente en el sistema SAP: {{no_personas_bd}}
+<<<<<<< HEAD
+    <!--acceder al valor de la clave del diccionario creado en la vista webapp\views {'no_personas_bd':no_personas,'registros_act':registros_db} . -->
+=======
+    <!--acceder al valor de la clave del diccionario creado en la vista. -->
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+</div>
+<div>
+    <a href="nueva_persona">Agregar Persona</a><!--se mapea el path nueva_persona del archivo urls.py-->
+</div>
+<div>
+<<<<<<< HEAD
+    <table border="1"><!--visulizar la informacion no como una lista si no como una tabla-->
+=======
+    <table border="1">
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th></th><!--para cabecero de ver-->
+            <th></th><!--para cabecero de editar-->
+<<<<<<< HEAD
+            <th></th><!--para cabecero de eliminar-->
+        </tr>
+        </thead>
+        <tbody>
+        {%for item in registros_act%}<!--se repite tantas veces como datos tenga la base de datos-->
+=======
+        </tr>
+        </thead>
+        <tbody>
+        {%for item in registros_act%}<!--se repite tantas veces como datos tenga la tabla-->
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.Nombre}} {{item.Apellido}}</td>
+            <td>{{item.Email}}</td>
+            <td><a href="detalle_persona/{{item.id}}">Ver </a></td>
+            <td><a href="editar_persona/{{item.id}}">Editar</a></td>
+<<<<<<< HEAD
+            <td><a href="eliminar_persona/{{item.id}}">Eliminar</a></td>
+=======
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+        </tr>
+        {%endfor%}
+
+        </tbody>
+
+    </table>
+<<<<<<< HEAD
+    <!--Visualizar la base como una lista y no como una tabla-->
+=======
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+    <!--      <ul>
+              {%for item in registros_act%}
+              <li>Persona {{item.id}}: {{item.Nombre}} {{item.Apellido}}
+                  Email: {{item.Email}}
+                  <a href="detalle_persona/{{item.id}}">Ver </a> va al path detalle persona del archivo urls.py
+                  <a href="editar_persona/{{item.id}}">Editar</a> va al path detalle persona del archivo urls.py
+              </li>
+              {%endfor%}
+          </ul>-->
+
+
+</div>
+
+</body>
+</html>

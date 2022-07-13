@@ -1,0 +1,9 @@
+pip install pyinstaller
+
+cd C:\proyectos_python\loginbasico(ubicacion del archivo .py a volver exe)
+
+pyinstaller --windowed --onefile login.py(nombre del archivo .py)
+
+pyinstaller --windowed --onefile --icon=./icono.ico login.py (si se desea un icono personalizado agregar el fragmento de codigo --icon=ubicacion del archivo
+
+el archivo .exe se almacenara en la carpeta dist

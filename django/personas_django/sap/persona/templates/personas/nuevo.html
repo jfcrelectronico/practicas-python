@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva Persona</title>
+</head>
+<body>
+    <h1>Agregar Persona a la base de datos</h1>
+
+    <form method="POST">
+        <table>
+<<<<<<< HEAD
+            {{formaPersona}}<!--objeto tipo modelo relacional para desplegar un formulario la misma se crea en el archivo persona\views.py-->
+        </table>
+        <button type="submit">Enviar</button>
+        {% csrf_token %}<!--token para pasar la validacion CSRF acciones que forzan a un usuario final a ejecutar acciones no deseadas en una aplicacion web en la cual se esta actualmente autenticado->
+=======
+            {{formaPersona}}<!--objeto tipo modelo relacional para desplegar un formulario la misma se crea en el archivo views.py-->
+        </table>
+        <button type="submit">Enviar</button>
+        {% csrf_token %}
+>>>>>>> 2b587631e83f5d369d661a56a3288c947193c05a
+    </form>
+
+
+</body>
+</html>
